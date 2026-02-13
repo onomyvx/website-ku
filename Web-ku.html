@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Web-ku</title>
+
+  <style>
+    {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      background: #0f172a;
+      color: white;
+      line-height: 1.6;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    img {
+      max-width: 100%;
+      display: block;
+    }
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
+    header {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 0;
+    }
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+      color: #38bdf8;
+    }
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+    .nav-links a {
+      opacity: 0.8;
+      transition: 0.2s;
+    }
+    .nav-links a:hover {
+      opacity: 1;
+      color: #38bdf8;
+    }
+    .hero {
+      padding: 70px 0;
+    }
+    .hero-box {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 30px;
+      align-items: center;
+    }
+    .hero h1 {
+      font-size: 38px;
+      margin-bottom: 15px;
+      line-height: 1.2;
+    }
+    .hero p {
+      opacity: 0.8;
+      margin-bottom: 20px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 18px;
+      background: #38bdf8;
+      color: #0f172a;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: 0.2s;
+    }
+    .btn:hover {
+      transform: translateY(-2px);
+      opacity: 0.9;
+    }
+    .hero-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 18px;
+      padding: 20px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    }
+    .hero-card h3 {
+      margin-bottom: 10px;
+      color: #38bdf8;
+    }
+    .hero-card ul {
+      list-style: none;
+      display: grid;
+      gap: 10px;
+      opacity: 0.85;
+    }
+    section {
+      padding: 60px 0;
+    }
+    .section-title {
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+    .section-desc {
+      opacity: 0.8;
+      margin-bottom: 25px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 18px;
+      transition: 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(56, 189, 248, 0.6);
+    }
+    .card h4 {
+      color: #38bdf8;
+      margin-bottom: 8px;
+    }
+    .card p {
+      opacity: 0.8;
+      font-size: 14px;
+    }
+    footer {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 25px 0;
+      opacity: 0.8;
+      text-align: center;
+    }
+    @media (max-width: 900px) {
+      .hero-box {
+        grid-template-columns: 1fr;
+      }
+      .grid {
+        grid-template-columns: 1fr;
+      }
+      .nav-links {
+        gap: 12px;
+        font-size: 14px;
+      }
+      .hero h1 {
+        font-size: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container nav">
+      <div class="logo">XyraaWeb</div>
+
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#fitur">Fitur</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+    </div>
+  </header>
+  <main id="home" class="hero">
+    <div class="container hero-box">
+
+      <div>
+        <h1>Daftar perangkat lunak yang sudah berkembang di zaman modern.</h1>
+        <p>
+          Perangkat lunak adalah sekumpulan program atau aplikasi yang berisi perintah-perintah untuk menjalankan dan mengatur kerja komputer/HP agar bisa melakukan tugas tertentu.
+        </p>
+
+        <a class="btn" href="#fitur">Lihat Detail</a>
+      </div>
+
+      <div class="hero-card">
+        <h3>Yang sudah ada:</h3>
+        <ul>
+          <li>✅ Windows</li>
+          <li>✅ Android</li>
+          <li>✅ Microsoft Office (Word, Excel, PowerPoint)</li>
+          <li>✅ Google Chrome</li>
+          <li>✅ WhatsApp</li>
+          <li>✅ Instagram</li>
+          <li>✅ CapCut</li>
+          <li>✅ Adobe Photoshop</li>
+          <li>✅ Antivirus (Avast, Smadav, Windows Defender)</li>
+        </ul>
+      </div>
+
+    </div>
+  </main>
+  <section id="fitur">
+    <div class="container">
+      <h2 class="section-title">Fitur Utama</h2>
+      <p class="section-desc">
+        Perangkat lunak
+      </p>
+      <div class="grid">
+        <div class="card">
+          <h4>Canggih</h4>
+          <p>Software Sistem
+Contoh: Windows, Android, Linux (buat mengatur perangkat)</p>
+        </div>
+        <div class="card">
+          <h4>Canggih</h4>
+          <p>Software Aplikasi
+Contoh: WhatsApp, Instagram, Microsoft Word (buat dipakai user)</p>
+        </div>
+        <div class="card">
+          <h4>Canggih</h4>
+          <p>Software Utilitas
+Contoh: Antivirus, pembersih file, WinRAR (buat perawatan sistem)</p>
+        </div>
+        <div class="card">
+          <h4>Canggih</h4>
+          <p>Software Pemrograman
+Contoh: VS Code, Python, Java (buat bikin program)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="tentang">
+    <div class="container">
+      <h2 class="section-title">Tentang Software</h2>
+      <p class="section-desc">
+<p>
+  Software (perangkat lunak) adalah sekumpulan program atau perintah di komputer dan HP
+  yang berfungsi untuk menjalankan tugas tertentu.
+</p>
+
+<p>
+  Jika hardware adalah benda fisik seperti keyboard, layar, dan mouse, maka software adalah
+  bagian yang membuat perangkat bisa digunakan.
+</p>
+
+<h2>Fungsi Software</h2>
+      <ul>
+  <li>Mengoperasikan komputer atau HP</li>
+  <li>Membantu pekerjaan seperti mengetik, edit foto, dan desain</li>
+  <li>Menjalankan game atau aplikasi</li>
+  <li>Mengatur sistem agar perangkat berjalan normal</li>
+</ul>
+
+<h2>Jenis-Jenis Software</h2>
+
+<h3>1. Software Sistem</h3>
+<p>
+  Software sistem adalah perangkat lunak yang mengatur jalannya perangkat.
+</p>
+<ul>
+  <li>Windows</li>
+  <li>Android</li>
+  <li>iOS</li>
+  <li>Linux</li>
+</ul>
+
+<h3>2. Software Aplikasi</h3>
+<p>
+  Software aplikasi adalah perangkat lunak yang digunakan pengguna untuk melakukan aktivitas tertentu.
+</p>
+<ul>
+  <li>WhatsApp</li>
+  <li>Instagram</li>
+  <li>Google Chrome</li>
+  <li>Microsoft Word</li>
+  <li>CapCut</li>
+</ul>
+
+<h3>3. Software Utility</h3>
+<p>
+  Software utility adalah perangkat lunak yang membantu perawatan sistem.
+</p>
+<ul>
+  <li>Antivirus</li>
+  <li>Pembersih file sampah</li>
+  <li>Backup data</li>
+</ul>
+
+<h2>Contoh Software di Kehidupan Sehari-hari</h2>
+<ul>
+  <li>Membuka Instagram</li>
+  <li>Menonton YouTube</li>
+  <li>Mengetik tugas di Microsoft Word</li>
+</ul>
+      </p>
+    </div>
+  </section>
+  <section id="kontak">
+    <div class="container">
+      <h2 class="section-title">Kontak</h2>
+      <p class="section-desc">
+      </p>
+      <div class="grid">
+        <div class="card">
+          <h4>Email</h4>
+          <p>xyraa@email.com</p>
+        </div>
+
+      <a href="https://www.instagram.com/xieroo_5?igsh=MXFqeTQ0dnZ1ODFnYQ==">
+        <div class="card">
+          <h4>Instagram</h4>
+          <p>@Xieroo_5</p>
+        </div>
+     </a>    
+
+      <a href="https://www.tiktok.com/@bimorangsana?_r=1&_t=ZS-93sQ8YxrppQ">
+        <div class="card">
+          <h4>TikTok</h4>
+          <p>@BimOrangSana</p>
+        </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  
+  <footer>
+    <div class="container">
+      © 2026 XyraaWeb — Tentang.
+    </div>
+  </footer>
+
+</body>
+</html>
